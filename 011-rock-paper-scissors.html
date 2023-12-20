@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fonction</title>
+    <link rel="stylesheet" href="011-zamba7.css">
+  </head>
+  <body>
+    <h1 style="text-align: center">Zamba7</h1>
+    <div class="zamba7">
+      <button onkeydown="onkey(event)"; onclick="b('Scissor')" id="scissors"><img src="scissor.jpg" alt="">
+      </button>
+      <button onkeydown="onkey(event)"; onclick="b('Rock')" id="rock"><img src="rock.jpg" alt="">
+      </button>
+      <button onkeydown="onkey(event)"; onclick="b('Paper')" id="paper"><img src="paper.jpg" alt="">
+      </button>
+      <p class="result resolt"></p>
+      <p class="moves moves2"></p>
+      <p class="paragraph"></p>
+      <button id="rest" onclick="
+      score.Wins = 0;
+      score.Loses = 0;
+      score.Draws = 0;
+      localStorage.removeItem('score')
+      updatescore();
+      showtheresult();
+      showthemoves();
+      " >Reset Score</button><button id="rest" onclick="autoPlay();">Auto Play</button>
+      <script src="011-zamba7.js" ></script>
+  </body>
+</html>
